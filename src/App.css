@@ -1,38 +1,85 @@
-.App {
+/* src/App.css */
+
+body {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* Light text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Required for positioning the orb */
+}
+
+.app-container {
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #a070d1; /* Light purple for the heading */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="file"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #a070d1; /* Light purple border */
+  background-color: #2a0024; /* Darker background for input */
+  color: #ffffff; /* Light text color for input */
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="file"]::file-selector-button {
+  background-color: #a070d1; /* Light purple button for file input */
+  color: #000; /* Black text on button */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="file"]::file-selector-button:hover {
+  background-color: #9157b8; /* Darker purple on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a070d1; /* Light purple button */
+  color: #000; /* Black text */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
 }
+
+button:hover {
+  background-color: #9157b8; /* Darker purple on hover */
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #ff4081; /* Pink for error messages */
+}
+
+.image-preview {
+  margin: 20px 0;
+}
+
+.image-preview img {
+  max-width: 50%; /* Reduce image size to 50% of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  border: 2px solid #a070d1; /* Light purple border around the image */
+}
+
+.result-container img {
+  max-width: 50%; /* Reduce result image size to 50% of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  border: 2px solid #a070d1; /* Light purple border around the image */
+}
+
+/* Add styles for the blinking orb */

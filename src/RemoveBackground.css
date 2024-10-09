@@ -1,0 +1,45 @@
+/* src/components/RemoveBackground.css */
+
+.remove-bg-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .image-preview img {
+    max-width: 50%; /* Reduce image size to 50% of its container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #a070d1; /* Light purple border */
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .result-container img {
+    max-width: 50%; /* Reduce result image size to 50% of its container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #a070d1; /* Light purple border */
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a070d1; /* Light purple button */
+    color: #000; /* Black text */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9157b8; /* Darker purple on hover */
+    color: white; /* Change text color to white on hover */
+  }
+  
+  .error-message {
+    color: #ff4081; /* Pink for error messages */
+    font-weight: bold;
+  }
+  
